@@ -1,0 +1,21 @@
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px;
+}
+
+.stuck
+{
+    position: fixed;
+    top: 0;
+}
+
+.links
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}

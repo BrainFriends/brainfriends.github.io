@@ -1,4 +1,24 @@
 
+::-webkit-scrollbar 
+{ 
+  width: 5px; 
+  height: 5px; 
+}
+::-webkit-scrollbar-track 
+{ 
+    background: #181818; 
+}
+::-webkit-scrollbar-thumb 
+{ 
+    background: #eee; 
+    border-radius: 2.5px;
+}
+::-webkit-scrollbar-thumb:hover 
+{ 
+    background: #ddd; 
+}
+
+
 *
 {
     margin: 0;
@@ -9,10 +29,12 @@ img
     max-height: 100%;
     max-width: 100%;
 
+    display: block;
+
     object-fit: cover;
 }
 
-.text-box
+.padded-box
 {
     padding: 20px;
 }
@@ -21,6 +43,12 @@ img
 {
     text-decoration: none;
     color: inherit;
+
+    transition: ease-in-out 200ms;
+}
+.link-button:hover
+{
+    transform: scale(1.1);
 }
 
 .icon-box
@@ -48,4 +76,23 @@ img
     
     display: flex;
     align-items: center;
+}
+
+.full-page-wrapper
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.collection
+{
+    display: flex;
+    flex-wrap: wrap;
+    > div
+    {
+        flex: 1;
+        min-width: 300px;
+    }
 }
