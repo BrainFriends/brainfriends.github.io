@@ -1,10 +1,17 @@
 
 .navbar
 {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
 
-    padding: 20px;
+    background-color: inherit;
+
+    .content
+    {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 20px;
+    }
 }
 
 .stuck
